@@ -1,6 +1,6 @@
 os/os_timers.o: \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_timers.c \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_timers.h
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_timers.h:
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_timers.c \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_timers.h
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_timers.h:

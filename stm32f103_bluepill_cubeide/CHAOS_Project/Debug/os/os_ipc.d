@@ -1,6 +1,6 @@
 os/os_ipc.o: \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_ipc.c \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_ipc.h
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_ipc.h:
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_ipc.c \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_ipc.h
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_ipc.h:

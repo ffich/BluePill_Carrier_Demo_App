@@ -7,6 +7,7 @@
 #include "os_task.h"
 #include "strings.h"
 #include "main.h"
+#include "ssd1306.h"
 
 
 /* Imported globals */
@@ -15,6 +16,8 @@ extern TIM_HandleTypeDef htim2;
 extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart3;
 extern ADC_HandleTypeDef hadc1;
+
+extern ssd1306_t oled;
 
 CAN_TxHeaderTypeDef txHeader;
 uint32_t txMailbox;
@@ -214,6 +217,10 @@ TASK(OLED_Task)
 #endif
 
 	/* TODO: User code */
+
+	ssd1306_set_cursor(&oled, 0, 48);
+	ssd1306_write_string(&oled, "OLED TASK RUNNING...", 1);
+    ssd1306_update(&oled);
 
 	/* Task Termination */
 	Os_TerminateTask();

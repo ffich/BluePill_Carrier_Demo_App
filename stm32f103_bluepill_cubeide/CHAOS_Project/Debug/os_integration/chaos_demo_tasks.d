@@ -1,15 +1,15 @@
 os_integration/chaos_demo_tasks.o: \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os_integration/chaos_demo_tasks.c \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_task.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os_cfg/os_task_cfg.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_timers.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os_cfg/os_cfg.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_ipc.h \
- C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_task.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_cfg/os_task_cfg.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_timers.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_cfg/os_cfg.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_ipc.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.h \
  ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -42,17 +42,18 @@ os_integration/chaos_demo_tasks.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_task.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os_cfg/os_task_cfg.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/common.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_timers.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os_cfg/os_cfg.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_ipc.h:
-C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_task.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.h
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_cfg/os_task_cfg.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_timers.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_cfg/os_cfg.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_ipc.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -87,3 +88,4 @@ C:/Dati/60_Repositories/10_Public/Bluepill_Carrier/Test/generated/os/os_task.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.h:

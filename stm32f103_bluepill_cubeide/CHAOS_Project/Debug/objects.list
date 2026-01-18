@@ -46,3 +46,4 @@
 "./os_cfg/os_task_cfg.o"
 "./os_integration/chaos_demo_tasks.o"
 "./os_integration/chaos_hooks.o"
+"./os_integration/ssd1306.o"

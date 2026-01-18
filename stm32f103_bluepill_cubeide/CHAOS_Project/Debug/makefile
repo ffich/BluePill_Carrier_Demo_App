@@ -67,8 +67,8 @@ all: main-build
 main-build: CHAOS_Project.elf secondary-outputs
 
 # Tool invocations
-CHAOS_Project.elf CHAOS_Project.map: $(OBJS) $(USER_OBJS) C:\Dati\60_Repositories\10_Public\Bluepill_Carrier\Test\generated\stm32f103_bluepill_cubeide\CHAOS_Project\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "CHAOS_Project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Dati\60_Repositories\10_Public\Bluepill_Carrier\Test\generated\stm32f103_bluepill_cubeide\CHAOS_Project\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CHAOS_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+CHAOS_Project.elf CHAOS_Project.map: $(OBJS) $(USER_OBJS) D:\60_Repositories\10_Public\PR202513_BPCarrier_DemoApp\BluePill_Carrier_Demo_App\stm32f103_bluepill_cubeide\CHAOS_Project\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "CHAOS_Project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\60_Repositories\10_Public\PR202513_BPCarrier_DemoApp\BluePill_Carrier_Demo_App\stm32f103_bluepill_cubeide\CHAOS_Project\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CHAOS_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

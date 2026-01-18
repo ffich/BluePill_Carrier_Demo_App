@@ -38,6 +38,7 @@
 #define LED_Task_ID                                              3u
 #define Readings_Task_ID                                              4u
 #define OLED_Task_ID                                              5u
+#define Serial_Task_ID                                              6u
 /************************************************************************
 * EXPORTED Macros
 ************************************************************************/

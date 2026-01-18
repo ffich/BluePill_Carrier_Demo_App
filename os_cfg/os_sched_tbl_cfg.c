@@ -59,7 +59,8 @@ SchedTblType SchedTable[SCHED_EVT_NUMBER] =
   {2,     COUNTER_INIT,    100}, 
   {3,     COUNTER_INIT,    1000}, 
   {4,     COUNTER_INIT,    250}, 
-  {5,     COUNTER_INIT,    50}, 
+  {5,     COUNTER_INIT,    1000},
+  {6,     COUNTER_INIT,    1000},
   /* ------------------------------------------------ */
 };
 

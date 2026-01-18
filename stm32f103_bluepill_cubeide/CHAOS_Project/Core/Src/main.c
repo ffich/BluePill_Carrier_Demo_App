@@ -25,6 +25,7 @@
 #include "os.h"
 #include "strings.h"
 #include "usbd_cdc_if.h"
+#include "ssd1306.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,7 +58,7 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
-
+ssd1306_t oled;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -135,7 +136,17 @@ int main(void)
   MX_I2C1_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+	ssd1306_init(&oled, &hi2c1);
 
+	ssd1306_clear(&oled);
+	ssd1306_set_cursor(&oled, 0, 0);
+	ssd1306_write_string(&oled, "STARTING CHAOS", 1);
+	ssd1306_set_cursor(&oled, 0, 16);
+	ssd1306_write_string(&oled, "RTOS v1.0", 1);
+	ssd1306_set_cursor(&oled, 0, 32);
+	ssd1306_write_string(&oled, "HELLO STM32F1!", 1);
+
+	ssd1306_update(&oled);
   /* Start timer */
   HAL_TIM_Base_Start_IT(&htim2);
 

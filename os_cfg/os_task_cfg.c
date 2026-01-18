@@ -45,6 +45,7 @@ extern void RS485_Task (void);
 extern void LED_Task (void);
 extern void Readings_Task (void);
 extern void OLED_Task (void);
+extern void Serial_Task (void);
 
 /************************************************************************
 * GLOBAL Variables
@@ -60,6 +61,7 @@ TbcType Tasks [] =
   {LED_Task_ID,           LED_Task,         IDLE,           5},
   {Readings_Task_ID,           Readings_Task,         IDLE,           20},
   {OLED_Task_ID,           OLED_Task,         IDLE,           10},
+  {Serial_Task_ID,           Serial_Task,         IDLE,           10},
   /* -------------------------------------------------------------------- */
 };
 
