@@ -56,12 +56,12 @@ TbcType Tasks [] =
   /* ID                    Task              State           Priority     */
   /* -------------------------------------------------------------------- */   
   /* --------------------------------- Tasks ---------------------------- */   
-  {CAN_Task_ID,           CAN_Task,         IDLE,           30},
-  {RS485_Task_ID,           RS485_Task,         IDLE,           30},
+  {CAN_Task_ID,           CAN_Task,         IDLE,           1},
+  {RS485_Task_ID,           RS485_Task,         IDLE,           40},
   {LED_Task_ID,           LED_Task,         IDLE,           5},
   {Readings_Task_ID,           Readings_Task,         IDLE,           20},
   {OLED_Task_ID,           OLED_Task,         IDLE,           10},
-  {Serial_Task_ID,           Serial_Task,         IDLE,           10},
+  {Serial_Task_ID,           Serial_Task,         IDLE,           50},
   /* -------------------------------------------------------------------- */
 };
 

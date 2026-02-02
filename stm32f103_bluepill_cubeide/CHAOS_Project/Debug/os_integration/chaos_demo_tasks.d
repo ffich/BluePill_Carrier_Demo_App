@@ -40,9 +40,6 @@ os_integration/chaos_demo_tasks.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
  D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.h
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os.h:
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/common.h:
@@ -85,7 +82,4 @@ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_Ap
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
-../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h:
-../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.h:
