@@ -1,8 +1,10 @@
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:8:26:ssd1306_write_cmd	1
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:14:26:ssd1306_write_data	3
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:48:23:font_get	3
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:56:6:ssd1306_clear	1
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:63:6:ssd1306_set_cursor	1
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:69:6:ssd1306_draw_pixel	4
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:78:6:ssd1306_write_char	6
-D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:102:6:ssd1306_write_string	3
-D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:159:19:ssd1306_update	9
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:102:6:ssd1306_write_string	2
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:111:19:ssd1306_init	26
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/ssd1306.c:159:19:ssd1306_update	7

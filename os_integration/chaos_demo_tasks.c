@@ -86,11 +86,11 @@ uint32_t adc_in1;
 DS3231_DateTime now;
 DS3231_DateTime set = {
   .seconds 				= 0,
-  .minutes 				= 54,
-  .hours 				= 18,
-  .dayOfWeek 			= 5,
-  .day 					= 30,
-  .month 				= 1,
+  .minutes 				= 07,
+  .hours 				= 19,
+  .dayOfWeek 			= 7,
+  .day 					= 15,
+  .month 				= 2,
   .year 				= 2026
 };
 
@@ -175,18 +175,19 @@ void SERIAL_SendString (const char *str)
 /* RTC read */
 HAL_StatusTypeDef DS3231_ReadDateTime(I2C_HandleTypeDef *hi2c, DS3231_DateTime *dt)
 {
-  uint8_t raw[7];
+  uint8_t raw[8];
 
-  // Read 7 byte: sec, min, hour, dow, date, month, year
+  // Read 7 byte: sec, min, hour, dow, date, month, year - Bug on I2C HAL, last byte duplicated.
   HAL_StatusTypeDef st = HAL_I2C_Mem_Read(
       hi2c,
       DS3231_ADDR,
       DS3231_REG_TIME,
       I2C_MEMADD_SIZE_8BIT,
       raw,
-      sizeof(raw),
+      8,
       100
   );
+
   if (st != HAL_OK) return st;
 
   // Seconds: bit7 = CH (clock halt)
@@ -244,12 +245,41 @@ HAL_StatusTypeDef DS3231_SetDateTime(I2C_HandleTypeDef *hi2c, const DS3231_DateT
   return HAL_I2C_Mem_Write(
       hi2c,
       DS3231_ADDR,
-      DS3231_REG_TIME,
+      0x00,
       I2C_MEMADD_SIZE_8BIT,
       raw,
-      sizeof(raw),
+      7,
       100
   );
+}
+
+HAL_StatusTypeDef DS3231_DumpDecoded(I2C_HandleTypeDef *hi2c)
+{
+  uint8_t raw[7] = {1,2,3,4,5,6,7};
+
+  HAL_StatusTypeDef st = HAL_I2C_Mem_Read(
+      hi2c, DS3231_ADDR, 0x00, I2C_MEMADD_SIZE_8BIT, raw, 7, 100);
+
+  st = HAL_I2C_Mem_Read(
+      hi2c, DS3231_ADDR, 6, I2C_MEMADD_SIZE_8BIT, &raw[6], 1, 100);
+
+  if (st != HAL_OK) return st;
+  printf("DS3231 RAW: %02X %02X %02X %02X %02X %02X %02X\r\n",
+         raw[0], raw[1], raw[2], raw[3], raw[4], raw[5], raw[6]);
+
+  uint8_t sec  = bcd2bin(raw[0] & 0x7F);
+  uint8_t min  = bcd2bin(raw[1] & 0x7F);
+  uint8_t hour = bcd2bin(raw[2] & 0x3F);
+  uint8_t dow  = bcd2bin(raw[3] & 0x07);
+  uint8_t dom  = bcd2bin(raw[4] & 0x3F);
+  uint8_t mon  = bcd2bin(raw[5] & 0x1F);
+  uint8_t yy   = bcd2bin(raw[6]);           // THIS is the year 00..99
+  uint16_t year = 2000 + yy;
+
+  printf("Decoded: %04u-%02u-%02u DOW=%u %02u:%02u:%02u\r\n",
+         year, mon, dom, dow, hour, min, sec);
+
+  return HAL_OK;
 }
 
 static void OLED_ShowTime(void *oled, const DS3231_DateTime *dt)

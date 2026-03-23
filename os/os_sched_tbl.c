@@ -93,7 +93,7 @@ Os_ApiReturnType Os_UpdateSchedTable (void)
 #ifdef TERMINAL_DEBUG_ENABLED
             if (SchEvtIdx == 0)
             {
-              printf("\r\nTimestamp - %d - ", Os_TickCounter);        
+              printf("\r\n[%d ms] - ", Os_TickCounter);
               printf("New Scheduling cycle:\r\n");
             }
 #endif      
@@ -152,7 +152,7 @@ Os_ApiReturnType Os_StartSchedTable (uint16_t ID)
         /* OK */
         OpRes = E_OS_OK;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Started \r\n", ID);
 #endif          
       }
@@ -165,7 +165,7 @@ Os_ApiReturnType Os_StartSchedTable (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-          printf("Timestamp - %d - ", Os_TickCounter);      
+          printf("[%d ms] - ", Os_TickCounter);
           printf("Schedule Table %d Not Started, wrong state transition \r\n", ID);
 #endif       
       }        
@@ -179,7 +179,7 @@ Os_ApiReturnType Os_StartSchedTable (uint16_t ID)
     /* Wrong ID */
     OpRes = E_OS_WRONG_SCH_TBL_ID;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Not Found \r\n", ID);
 #endif        
   }
@@ -218,7 +218,7 @@ Os_ApiReturnType Os_StopSchedTable (uint16_t ID)
         /* OK */
         OpRes = E_OS_OK;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Started \r\n", ID);
 #endif          
       }
@@ -231,7 +231,7 @@ Os_ApiReturnType Os_StopSchedTable (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-          printf("Timestamp - %d - ", Os_TickCounter);      
+          printf("[%d ms] - ", Os_TickCounter);
           printf("Schedule Table %d Not Started, wrong state transition \r\n", ID);
 #endif       
       }        
@@ -245,7 +245,7 @@ Os_ApiReturnType Os_StopSchedTable (uint16_t ID)
     /* Wrong ID */
     OpRes = E_OS_WRONG_SCH_TBL_ID;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Not Found \r\n", ID);
 #endif        
   }

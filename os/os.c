@@ -151,7 +151,7 @@ Os_VoidReturnType OsDispatch (uint16_t TaskIndex)
   if (Tasks[TaskIndex].Task != NULL)
   {
 #ifdef TERMINAL_DEBUG_ENABLED
-	printf("Timestamp - %d - ", Os_TickCounter);
+	printf("[%d ms] - ", Os_TickCounter);
 	printf("Task %d Running \r\n", Tasks[TaskIndex].TaskID);
 #endif
     /* Change task state */

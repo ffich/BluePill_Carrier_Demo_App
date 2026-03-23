@@ -94,7 +94,7 @@ Os_ApiReturnType Os_ActivateTask (uint16_t TaskID)
         /* OK */
         OpRes = E_OS_OK;            
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Task %d Activated \r\n", Tasks[TaskIdx].TaskID);
 #endif             
       }
@@ -107,9 +107,13 @@ Os_ApiReturnType Os_ActivateTask (uint16_t TaskID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-          printf("Timestamp - %d - ", Os_TickCounter);      
-          printf("Task %d Not Activated, wrong state transition \r\n", Tasks[TaskIdx].TaskID);
-#endif            
+		printf("[%d ms] - ", Os_TickCounter);
+		printf("Task %d Not Activated, wrong state transition. Task in state %d.\r\n", Tasks[TaskIdx].TaskID, Tasks[TaskIdx].State);
+#endif
+#ifdef TERMINAL_DEBUG_ENABLED_ONLY_WRONG_TRANSITIONS
+		printf("[%d ms] - ", Os_TickCounter);
+		printf("Task %d Not Activated, wrong state transition. Task in state %d.\r\n", Tasks[TaskIdx].TaskID, Tasks[TaskIdx].State);
+#endif
       }
       break;
     }
@@ -125,7 +129,7 @@ Os_ApiReturnType Os_ActivateTask (uint16_t TaskID)
     User_ErrorHook(OpRes);
 #endif        
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Task %d Not Found \r\n", TaskID);
 #endif        
   }
@@ -156,7 +160,7 @@ Os_ApiReturnType Os_TerminateTask (void)
     /* OK */
     OpRes = E_OS_OK;
   #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);  
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Task %d Terminated \r\n", Tasks[ActiveTaskIndex].TaskID);
   #endif    
   }
@@ -242,7 +246,7 @@ Os_ApiReturnType Os_Yield (void)
       if (SomebodyYielded)
       {      
         SomebodyYielded--;
-        printf("Timestamp - %d - ", Os_TickCounter);  
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Task %d Resuming from Yield \r\n", Tasks[ActiveTaskIndex].TaskID);      
       }
     #endif 

@@ -89,7 +89,7 @@ Os_ApiReturnType Os_UpdateAlarms (void)
 #ifdef TERMINAL_DEBUG_ENABLED
           if (AlarmIdx == 0)
           {
-            printf("\r\nTimestamp - %d - ", Os_TickCounter);        
+            printf("\r\n[%d ms] - ", Os_TickCounter);
             printf("New Alarm firing:\r\n");
           }
 #endif      
@@ -181,7 +181,7 @@ Os_ApiReturnType Os_StartAlarm (uint16_t ID)
         /* OK */
         OpRes = E_OS_OK;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Alarm %d Started \r\n", ID);
 #endif          
       }
@@ -194,7 +194,7 @@ Os_ApiReturnType Os_StartAlarm (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-          printf("Timestamp - %d - ", Os_TickCounter);      
+          printf("[%d ms] - ", Os_TickCounter);
           printf("Alarm %d Not Started, wrong state transition \r\n", ID);
 #endif       
       }        
@@ -211,7 +211,7 @@ Os_ApiReturnType Os_StartAlarm (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Not Found \r\n", ID);
 #endif        
   }
@@ -250,7 +250,7 @@ Os_ApiReturnType Os_StopAlarm (uint16_t ID)
         /* OK */
         OpRes = E_OS_OK;
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Alarm %d Stopped \r\n", ID);
 #endif          
       }
@@ -263,7 +263,7 @@ Os_ApiReturnType Os_StopAlarm (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-          printf("Timestamp - %d - ", Os_TickCounter);      
+          printf("[%d ms] - ", Os_TickCounter);
           printf("Alarm %d Not Started, wrong state transition \r\n", ID);
 #endif       
       }        
@@ -280,7 +280,7 @@ Os_ApiReturnType Os_StopAlarm (uint16_t ID)
         User_ErrorHook(OpRes);
 #endif           
 #ifdef TERMINAL_DEBUG_ENABLED
-        printf("Timestamp - %d - ", Os_TickCounter);      
+        printf("[%d ms] - ", Os_TickCounter);
         printf("Schedule Table %d Not Found \r\n", ID);
 #endif        
   }
