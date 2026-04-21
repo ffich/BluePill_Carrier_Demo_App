@@ -816,6 +816,7 @@ TASK(Readings_Task)
 #endif
 	}
 
+
 	ADC_ChannelConfTypeDef sConfig = {0};
 
 	/* IN1 */
@@ -834,11 +835,13 @@ TASK(Readings_Task)
 	/* Read BMP280 data */
 	BME280_ReadData(&bme, &d);
 
+#if 0
 	/* Read temperature */
 	if (TMP102_ReadTemperatureC(&hi2c1, TMP102_ADDR_0x48, &temp) == HAL_OK)
 	{
 	  OLED_ShowTemperature(&oled, temp);
 	};
+#endif
 
 	/* Task Termination */
 	Os_TerminateTask();
@@ -851,7 +854,7 @@ TASK(OLED_Task)
 #endif
 
 	/* Write data on OLED */
-	OLED_ShowTime(&oled, &now);
+	//OLED_ShowTime(&oled, &now);
 
 	/* Task Termination */
 	Os_TerminateTask();

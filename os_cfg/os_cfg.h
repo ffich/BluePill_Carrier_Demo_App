@@ -34,8 +34,8 @@
 ************************************************************************/
 
 /* Uncomment this define to enable TERMINAL_DEBUG_ENABLED debug (only if printf redirect to UART) */
-#define TERMINAL_DEBUG_ENABLED
-#define TERMINAL_DEBUG_VERBOSE
+//#define TERMINAL_DEBUG_ENABLED
+//#define TERMINAL_DEBUG_VERBOSE
 //#define TERMINAL_DEBUG_ENABLED_ONLY_WRONG_TRANSITIONS
 
 /* -- OS TICK OPTIONS ------------------------------------------------------- */

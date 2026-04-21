@@ -1,7 +1,7 @@
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:68:18:Os_ActivateTask	5
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:150:18:Os_TerminateTask	2
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:189:18:Os_ChainTask	3
-D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:223:18:Os_Yield	3
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:223:18:Os_Yield	2
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:279:18:Os_ActivateTaskAndYield	3
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:310:18:Os_GetTaskID	1
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os/os_task.c:332:18:Os_GetTaskPriority	1

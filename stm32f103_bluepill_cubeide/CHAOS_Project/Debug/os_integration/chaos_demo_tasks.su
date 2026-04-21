@@ -33,5 +33,5 @@ D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_Ap
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:761:1:RS485_Task	8	static
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:778:1:LED_Task	8	static
 D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:791:1:Readings_Task	24	static
-D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:847:1:OLED_Task	8	static
-D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:860:1:Serial_Task	40	static
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:850:1:OLED_Task	8	static
+D:/60_Repositories/10_Public/PR202513_BPCarrier_DemoApp/BluePill_Carrier_Demo_App/os_integration/chaos_demo_tasks.c:863:1:Serial_Task	40	static
